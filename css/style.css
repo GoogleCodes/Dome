@@ -69,6 +69,20 @@ a, a:hover, a:visited, a:link {
   overflow: hidden;
   white-space: normal; }
 
+@font-face {
+  font-family: 'iconfont';
+  /* project id 530479 */
+  src: url("//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.eot");
+  src: url("//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.woff") format("woff"), url("//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.ttf") format("truetype"), url("//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
 .main_header .main_header_top_container {
   position: relative;
   z-index: 100;
@@ -524,7 +538,7 @@ a, a:hover, a:visited, a:link {
   .index_page .index_page_searchMore {
     width: 99px;
     height: 32px;
-    margin: 0px auto 70px;
+    margin: 70px auto;
     border-radius: 5px;
     line-height: 32px;
     text-align: center;
