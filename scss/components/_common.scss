@@ -1,0 +1,81 @@
+body {font-family:"微软雅黑";margin:0; padding:0; background: #fff; font-size:16px; color:#000;}
+div,form,img,ul,ol,li{margin: 0; padding: 0; border: 0;}
+li{list-style-type:none;}
+img{vertical-align:top;}
+a, a:hover, a:visited, a:link {
+    text-decoration: none; 
+    color: #4d4d4d; 
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.block {
+    display: block;
+}
+
+.clearfix:after{
+    content:'';
+    clear:both;
+    overflow:hidden;
+    height:0px;
+    *zoom:1;
+}
+
+.clamp_1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clamp_2 {
+    -webkit-line-clamp: 2;
+    line-height: 24px;
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.clamp_3 {
+    -webkit-line-clamp: 3;
+    line-height: 24px;
+    height: 72px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 530479 */
+  src: url('//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.eot');
+  src: url('//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_530479_hd7b00eredk7qfr.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
