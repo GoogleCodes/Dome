@@ -3,6 +3,7 @@
     .index_page_service_characteristics {
         width: 1200px;
         margin: 0 auto;
+        background: url('../images/img9.png') no-repeat #fff top center;
         padding: 35px 0 88px;
     }
     .index_common_title {
@@ -28,7 +29,7 @@
     .service_list {
         display: flex;
         justify-content: space-between;
-        margin-top: 65px; 
+        margin-top: 185px;
     }
 
     .service_item {
@@ -92,7 +93,7 @@
     .index_page_lead_success_container {
         height: 580px;
         width: 100%;
-        background: #f2f2f2;
+        background: url('../images/img7.png') no-repeat #f2f2f2;
         box-sizing: border-box;
         padding: 0 0 22px;
     }
@@ -122,7 +123,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 30px 0 27px;
+        margin: 170px 0 27px;
     }
 
     .lead_item {
@@ -173,8 +174,7 @@
     .match_header_container {
         height: 357px;
         width: 100%;
-        background-image: url('../images/matchBg.jpg');
-        background-repeat: repeat-x;
+        background: url('../images/matchBg.jpg') no-repeat;
     }
 
     .match_header {
@@ -428,6 +428,7 @@
 
     .index_page_date {
         padding: 1px 0;
+        background: url('../images/img8.png') no-repeat #f4f4f4 top center;
     }
 
     .index_page_date_title1 {
@@ -445,7 +446,7 @@
 
     .index_page_date_list {
         width: 1200px;
-        margin: 50px auto;
+        margin: 150px auto 50px;
     }
 
     .index_page_date_item {
@@ -549,62 +550,63 @@
 
     /* index_page_todate end */
 
-    /* index_page_footer start */
-    .index_page_footer {
-        width: 100%;
-        height: 184px;
-        background: #686868;
-    }
-
-    .index_page_footer .page_footer_body {
-        width: 630px;
-        padding: 27px 0px;
-        margin: 0px auto;
-        overflow: hidden;
-    }
-
-    .index_page_footer .page_footer_copy {
-        background: #4d4d4d;
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        font-size: 14px;
-        color: #b2b2b2;
-    }
-
-    .page_footer_imessage {
-        height: 108px;
-    }
-
-    .page_footer_imessage .wechat {
-        width: 130px;
-        color: #fff;
-        border-right: 1px dashed #fff;
-    }
-
-    .page_footer_imessage .wechat span {
-        line-height: 35px;
-    }
-
-    .page_footer_imessage .imsg_content {
-        margin-left: 50px;
-    }
-
-    .page_footer_imessage .imsg_content ul li {
-        color: #fff;
-        height: 30px;
-        line-height: 30px;
-        font-weight: 500;
-        margin: 0px 0px 7px;
-        letter-spacing: 0.5px;
-        font-family: '黑体';
-    }
-
-    .imsg_content ul li .iconfont {
-        font-size: 26px;
-        margin-right: 15px;
-    }
-
-    /* index_page_footer end */
 
 }
+
+/* index_page_footer start */
+.index_page_footer {
+    width: 100%;
+    height: 184px;
+    background: #686868;
+}
+
+.index_page_footer .page_footer_body {
+    width: 630px;
+    padding: 27px 0px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.index_page_footer .page_footer_copy {
+    background: #4d4d4d;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+.page_footer_imessage {
+    height: 108px;
+}
+
+.page_footer_imessage .wechat {
+    width: 130px;
+    color: #fff;
+    border-right: 1px dashed #fff;
+}
+
+.page_footer_imessage .wechat span {
+    line-height: 35px;
+}
+
+.page_footer_imessage .imsg_content {
+    margin-left: 50px;
+}
+
+.page_footer_imessage .imsg_content ul li {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0px 0px 7px;
+    letter-spacing: 0.5px;
+    font-family: '黑体';
+}
+
+.imsg_content ul li .iconfont {
+    font-size: 26px;
+    margin-right: 15px;
+}
+
+/* index_page_footer end */

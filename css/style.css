@@ -214,12 +214,11 @@ a, a:hover, a:visited, a:link {
   /* index_page_date_content start */
   /* index_page_date_content end */
   /* index_page_todate start */
-  /* index_page_todate end */
-  /* index_page_footer start */
-  /* index_page_footer end */ }
+  /* index_page_todate end */ }
   .index_page .index_page_service_characteristics {
     width: 1200px;
     margin: 0 auto;
+    background: url("../images/img9.png") no-repeat #fff top center;
     padding: 35px 0 88px; }
   .index_page .index_common_title {
     color: #dbdbdb;
@@ -241,7 +240,7 @@ a, a:hover, a:visited, a:link {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 65px; }
+    margin-top: 185px; }
   .index_page .service_item {
     position: relative;
     -webkit-box-sizing: border-box;
@@ -283,7 +282,7 @@ a, a:hover, a:visited, a:link {
   .index_page .index_page_lead_success_container {
     height: 580px;
     width: 100%;
-    background: #f2f2f2;
+    background: url("../images/img7.png") no-repeat #f2f2f2;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0 0 22px; }
@@ -308,7 +307,7 @@ a, a:hover, a:visited, a:link {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 30px 0 27px; }
+    margin: 170px 0 27px; }
   .index_page .lead_item {
     float: left;
     margin-right: 20px;
@@ -344,8 +343,7 @@ a, a:hover, a:visited, a:link {
   .index_page .match_header_container {
     height: 357px;
     width: 100%;
-    background-image: url("../images/matchBg.jpg");
-    background-repeat: repeat-x; }
+    background: url("../images/matchBg.jpg") no-repeat; }
   .index_page .match_header {
     width: 1200px;
     height: 100%;
@@ -521,7 +519,8 @@ a, a:hover, a:visited, a:link {
     background: #f93556;
     color: #fff; }
   .index_page .index_page_date {
-    padding: 1px 0; }
+    padding: 1px 0;
+    background: url("../images/img8.png") no-repeat #f4f4f4 top center; }
   .index_page .index_page_date_title1 {
     font-size: 42px;
     color: #dbdbdb;
@@ -533,7 +532,7 @@ a, a:hover, a:visited, a:link {
     text-align: center; }
   .index_page .index_page_date_list {
     width: 1200px;
-    margin: 50px auto; }
+    margin: 150px auto 50px; }
   .index_page .index_page_date_item {
     height: 166px;
     -webkit-box-sizing: border-box;
@@ -601,40 +600,375 @@ a, a:hover, a:visited, a:link {
     right: 0px;
     font-size: 32px;
     color: #f93556; }
-  .index_page .index_page_footer {
-    width: 100%;
-    height: 184px;
-    background: #686868; }
-  .index_page .index_page_footer .page_footer_body {
-    width: 630px;
-    padding: 27px 0px;
+
+/* index_page_footer start */
+.index_page_footer {
+  width: 100%;
+  height: 184px;
+  background: #686868; }
+
+.index_page_footer .page_footer_body {
+  width: 630px;
+  padding: 27px 0px;
+  margin: 0px auto;
+  overflow: hidden; }
+
+.index_page_footer .page_footer_copy {
+  background: #4d4d4d;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #b2b2b2; }
+
+.page_footer_imessage {
+  height: 108px; }
+
+.page_footer_imessage .wechat {
+  width: 130px;
+  color: #fff;
+  border-right: 1px dashed #fff; }
+
+.page_footer_imessage .wechat span {
+  line-height: 35px; }
+
+.page_footer_imessage .imsg_content {
+  margin-left: 50px; }
+
+.page_footer_imessage .imsg_content ul li {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 0px 0px 7px;
+  letter-spacing: 0.5px;
+  font-family: '黑体'; }
+
+.imsg_content ul li .iconfont {
+  font-size: 26px;
+  margin-right: 15px; }
+
+/* index_page_footer end */
+/* login_content start */
+.login_content {
+  width: 100%;
+  height: 600px;
+  background: url("../../images/img1.png") no-repeat top center; }
+  .login_content .login_content_pages {
+    width: 1200px;
+    height: 600px;
+    margin: 0px auto;
+    position: relative; }
+  .login_content .login {
+    width: 400px;
+    border-radius: 10px;
+    background: #fff;
+    height: 369px;
+    position: absolute;
+    right: 76px;
+    top: 87px; }
+    .login_content .login .login_db {
+      padding: 30px 35px; }
+    .login_content .login .login_title {
+      font-size: 20px;
+      color: #f93556;
+      font-weight: bold; }
+    .login_content .login .login_line {
+      width: 100px;
+      height: 3px;
+      background: #f93556;
+      margin-top: 20px; }
+    .login_content .login .J_form {
+      margin: 30px 0 0; }
+      .login_content .login .J_form .field {
+        width: 338px;
+        height: 46px;
+        margin-bottom: 20px; }
+        .login_content .login .J_form .field #username_label, .login_content .login .J_form .field #password_label {
+          width: 40px;
+          height: 46px;
+          background: #cecece;
+          display: block;
+          text-align: center;
+          line-height: 46px;
+          font-size: 26px;
+          color: #fff; }
+        .login_content .login .J_form .field .login-text {
+          width: 275px;
+          padding-left: 10px;
+          height: 100%;
+          outline: none;
+          border: none;
+          background: #f4f4f4; }
+    .login_content .login .submit {
+      width: 100%;
+      height: 46px; }
+      .login_content .login .submit .J_Submit {
+        width: 100%;
+        height: 100%;
+        background: #f93556;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 2.5px;
+        border: 1px solid #f93556;
+        cursor: pointer; }
+      .login_content .login .submit .J_Submit:hover {
+        background: #f70f42;
+        border: 1px solid #f70f42; }
+    .login_content .login .login_links {
+      margin: 30px 0 0;
+      font-size: 14px;
+      color: #7f7f7f; }
+      .login_content .login .login_links a {
+        color: #7f7f7f; }
+
+/* login_content end */
+/* verifi_content start */
+.verifi_content {
+  width: 100%;
+  height: 600px;
+  background: url("../../images/img2.png") no-repeat top center; }
+  .verifi_content .verifi_content_pages {
+    width: 370px;
+    height: 455px;
+    margin: 0 auto;
+    padding: 29px 0; }
+    .verifi_content .verifi_content_pages .pages_ul_tab {
+      width: 100%;
+      height: 90px;
+      display: block;
+      text-align: center;
+      /*
+			li:before {
+				content: '';
+				display: block;
+			    position: absolute;
+			    bottom: 0px;
+			    left: 3%;
+			    margin-left: -6px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 31px 0 36px 41px;
+				border-color: transparent transparent transparent rgba(0,0,0,0.5);
+			}
+
+			li:after {
+				content: '';
+				display: block;
+			    position: absolute;
+			    bottom: 0px;
+			    right: -16%;
+			    margin-left: -6px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 31px 0 36px 41px;
+				border-color: transparent transparent transparent rgba(0,0,0,0.5);
+			}*/ }
+      .verifi_content .verifi_content_pages .pages_ul_tab li {
+        width: 185px;
+        height: 67px;
+        line-height: 67px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.1); }
+      .verifi_content .verifi_content_pages .pages_ul_tab .active {
+        color: #fff;
+        background: #f93556; }
+    .verifi_content .verifi_content_pages .pages {
+      width: 368px;
+      height: 358px;
+      margin: 0px auto;
+      background: rgba(0, 0, 0, 0.1); }
+      .verifi_content .verifi_content_pages .pages .pages_title {
+        width: 100%;
+        height: 109px;
+        color: #f93556;
+        font-weight: bold;
+        line-height: 109px;
+        font-size: 24px;
+        text-align: center; }
+      .verifi_content .verifi_content_pages .pages .V_form {
+        margin: 0px 5%; }
+        .verifi_content .verifi_content_pages .pages .V_form #pages_password {
+          display: none; }
+        .verifi_content .verifi_content_pages .pages .V_form .field {
+          width: 337px;
+          height: 44px;
+          margin-bottom: 30px; }
+          .verifi_content .verifi_content_pages .pages .V_form .field .field_select {
+            width: 60px;
+            height: 46px;
+            color: #fff;
+            border: none;
+            outline: none;
+            background: #cecece; }
+          .verifi_content .verifi_content_pages .pages .V_form .field .login_text {
+            width: 77%;
+            height: 100%;
+            border: none;
+            padding-left: 5%; }
+          .verifi_content .verifi_content_pages .pages .V_form .field .code_text {
+            width: 193px;
+            height: 46px;
+            border: none;
+            padding-left: 10px; }
+          .verifi_content .verifi_content_pages .pages .V_form .field .getCode {
+            text-align: center;
+            display: block;
+            width: 39%;
+            color: #f93556;
+            font-weight: bold;
+            line-height: 43px; }
+          .verifi_content .verifi_content_pages .pages .V_form .field .pages_pwd_text {
+            height: 44px;
+            width: 95%;
+            padding-left: 10px;
+            border: none; }
+        .verifi_content .verifi_content_pages .pages .V_form .submit .J_submit {
+          width: 100%;
+          height: 44px;
+          color: #fff;
+          font-size: 14px;
+          border: 1px solid #f93556;
+          border-radius: 5px;
+          background: #f93556;
+          cursor: pointer; }
+
+/* verifi_content end */
+/* pages_register start */
+.pages_register {
+  width: 796px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px auto 50px; }
+  .pages_register .R_form {
+    width: 695px;
     margin: 0px auto;
     overflow: hidden; }
-  .index_page .index_page_footer .page_footer_copy {
-    background: #4d4d4d;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
-    color: #b2b2b2; }
-  .index_page .page_footer_imessage {
-    height: 108px; }
-  .index_page .page_footer_imessage .wechat {
-    width: 130px;
-    color: #fff;
-    border-right: 1px dashed #fff; }
-  .index_page .page_footer_imessage .wechat span {
-    line-height: 35px; }
-  .index_page .page_footer_imessage .imsg_content {
-    margin-left: 50px; }
-  .index_page .page_footer_imessage .imsg_content ul li {
-    color: #fff;
-    height: 30px;
-    line-height: 30px;
-    font-weight: 500;
-    margin: 0px 0px 7px;
-    letter-spacing: 0.5px;
-    font-family: '黑体'; }
-  .index_page .imsg_content ul li .iconfont {
-    font-size: 26px;
-    margin-right: 15px; }
+    .pages_register .R_form .lock_verification {
+      overflow: hidden; }
+      .pages_register .R_form .lock_verification .pages_register_title {
+        color: #686868;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 67px;
+        text-align: center;
+        text-indent: 9em; }
+      .pages_register .R_form .lock_verification .reg_lock_pages {
+        width: 176px; }
+      .pages_register .R_form .lock_verification .reg_lock_input {
+        width: 69%; }
+        .pages_register .R_form .lock_verification .reg_lock_input .field {
+          height: 45px;
+          line-height: 45px; }
+          .pages_register .R_form .lock_verification .reg_lock_input .field .lock_label {
+            width: 18%;
+            color: #686868;
+            font-weight: bold;
+            text-align: right; }
+          .pages_register .R_form .lock_verification .reg_lock_input .field .reg_text {
+            height: 35px;
+            width: 65%;
+            padding-left: 10px;
+            border: none;
+            background: #f8f9fb;
+            margin: 0 0 0 32px; }
+            .pages_register .R_form .lock_verification .reg_lock_input .field .reg_text .el-input__inner {
+              border: none;
+              display: block;
+              background: #f8f9fb;
+              height: 33px; }
+          .pages_register .R_form .lock_verification .reg_lock_input .field .code_text {
+            width: 40%; }
+          .pages_register .R_form .lock_verification .reg_lock_input .field .click_getCode {
+            text-align: center;
+            color: #f1825e;
+            width: 25%;
+            font-size: 14px;
+            display: line-block;
+            line-height: 30px;
+            font-weight: bold;
+            text-decoration: underline; }
+    .pages_register .R_form .vip_imessage {
+      margin: 75px 0 0 0;
+      overflow: hidden; }
+      .pages_register .R_form .vip_imessage .pages_register_title {
+        text-align: center;
+        font-size: 20px;
+        color: #686868;
+        font-weight: bold;
+        text-indent: 9em; }
+      .pages_register .R_form .vip_imessage .reg_lock_pages {
+        width: 176px; }
+      .pages_register .R_form .vip_imessage .reg_lock_input {
+        width: 69%; }
+        .pages_register .R_form .vip_imessage .reg_lock_input .field {
+          height: 45px;
+          line-height: 45px; }
+          .pages_register .R_form .vip_imessage .reg_lock_input .field .el-radio-group {
+            margin: 0 0 0 32px; }
+          .pages_register .R_form .vip_imessage .reg_lock_input .field .lock_label {
+            width: 18%;
+            color: #686868;
+            font-weight: bold;
+            text-align: right; }
+          .pages_register .R_form .vip_imessage .reg_lock_input .field .reg_text {
+            height: 35px;
+            width: 65%;
+            padding-left: 10px;
+            border: none;
+            background: #f8f9fb;
+            margin: 0 0 0 32px; }
+            .pages_register .R_form .vip_imessage .reg_lock_input .field .reg_text .el-input__inner {
+              border: none;
+              display: block;
+              background: #f8f9fb;
+              height: 33px; }
+            .pages_register .R_form .vip_imessage .reg_lock_input .field .reg_text .el-input--suffix {
+              position: relative; }
+              .pages_register .R_form .vip_imessage .reg_lock_input .field .reg_text .el-input--suffix .el-input__inner {
+                border: none;
+                display: block;
+                background: #f8f9fb;
+                height: 33px; }
+              .pages_register .R_form .vip_imessage .reg_lock_input .field .reg_text .el-input--suffix .el-input__suffix .el-select__caret {
+                position: absolute;
+                top: 0px;
+                right: 0px; }
+    .pages_register .R_form .R_submit {
+      width: 200px;
+      padding: 0 0 0 100px;
+      margin: 50px auto 0; }
+      .pages_register .R_form .R_submit a {
+        color: #c1c1c1;
+        font-size: 14px; }
+      .pages_register .R_form .R_submit .submit {
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        margin: 13px 0 0 0;
+        border-radius: 10px;
+        font-size: 14px;
+        border: 1px solid #f93556;
+        background: #f93556; }
+      .pages_register .R_form .R_submit .el-checkbox__input.is-checked + .el-checkbox__label {
+        color: #686868; }
+      .pages_register .R_form .R_submit .el-checkbox__input.is-checked .el-checkbox__inner, .pages_register .R_form .R_submit .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background: #fff;
+        border: 3px solid #f93556;
+        width: 20px;
+        height: 20px; }
+      .pages_register .R_form .R_submit .el-checkbox__inner::after {
+        height: 16px;
+        left: 5px;
+        top: -8px;
+        width: 7px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        content: "";
+        border: 5px solid #f93556;
+        border-left: 0;
+        border-top: 0; }
+
+/* pages_register end */

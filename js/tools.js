@@ -1,7 +1,7 @@
-(function() {
+let ToolsFunction = (function() {
 
 	class Tools {
-
+        
 		swiperBanner() {
 			var mySwiper = new Swiper ('.swiper-container', {
 				loop: true,
@@ -76,15 +76,49 @@
         		}
         	});
         }
+
+        footerElemet() {
+            let html = "<div class='index_page_footer'> "+
+                        "<div class='page_footer_body'>"+
+                            "<div class='page_footer_imessage'>"+
+                                "<div class='wechat fl'>"+
+                                    "<img src='./images/wechatcode.png' class='block'>"+
+                                    "<span>关注公众号</span>"+
+                                "</div>"+
+                                "<div class='imsg_content fl'>"+
+                                    "<ul>"+
+                                        "<li class='clearfix'>"+
+                                            "<i class='iconfont fl icon-dianhua'></i>"+
+                                            "<span class='fl'>0871-65198586</span>"+
+                                        "</li>"+
+                                        "<li class='clearfix'>"+
+                                            "<i class='iconfont fl icon-youjian'></i>"+
+                                            "<span class='fl'>kmlaohuaishu@qq.com</span>"+
+                                        "</li>"+
+
+                                        "<li class='clearfix'>"+
+                                            "<i class='iconfont fl icon-weibiaoti-'></i>"+
+                                            "<span class='fl'>龙泉路408号云南财经职业学院兴隆院26栋1单元501号</span>"+
+                                        "</li>"+
+                                    "</ul>"+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='page_footer_copy clearfix'>"+
+                            "<div style='width: 630px;text-align: left;margin: 0px auto;'>"+
+                                "昆明老槐树婚介服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有&copy;2017 - 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;滇ICP备17005284号"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+            $('#footer').append(html);
+        }
+
 	}
 
-	let tools = new Tools();
-	tools.siblingsDom("IDate_list", "index_page_date_item active", "index_page_date_item");
+    return {
+        Tools
+    }
 
-	tools.siblingsDom("headrNavList", "main_header_nav_item active", "main_header_nav_item");
-
-	//	滚动图
-	tools.swiperBanner();
 	// tools.getNewsMesasge();
 
 })();

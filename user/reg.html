@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>昆明老槐树婚介服务有限公司</title>
+	<meta name=keywords content="">
+  	<meta name=description content="">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/iconfont.css">
+	<!-- 引入样式 -->
+  	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  	<!-- 先引入 Vue -->
+  	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- 引入组件库 -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	
+
+</head>
+<body>
+
+<!-- 头部 -->
+<div class="main_header">
+	<div class="main_header_top_container">
+		<div class="main_header_top">
+			<div class="main_header_top_left">昆明老槐树婚介服务有限公司</div>
+			<div class="main_header_top_right">
+				<div class="main_header_top_right_content1">寻缘管家：0871-65198586</div>
+				<div class="main_header_top_right_content2">安全中心</div>
+				<a href="user/login.html">
+					<div class="main_header_top_right_button">登录</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_header_nav_container">
+		<div class="main_header_nav">
+			<a href="index.html">
+				<img class="main_header_nav_logo" src="../images/logo.png">
+			</a>
+			<div class="main_header_nav_list" id="headrNavList">
+				<div class="main_header_nav_item active">
+					<a href="javascript:void(0);">首页</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">秀红线</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">牵红线</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">格调约会</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">喜结良缘</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">最新活动</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">联系我们</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_swiper">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../images/slide1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/slide1.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/slide1.jpg">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper_button_container">
+				<div class="swiper-button-prev swiper-button-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+
+<!-- register start -->
+<div class="pages_register" id="app">
+	<form class="R_form">
+		<div class="lock_verification">
+			<div class="pages_register_title">账号信息</div>
+			<div class="reg_lock_pages fl">
+				<img src="../images/img5.png" alt="">
+			</div>
+			<div class="reg_lock_input fl">
+				<div class="field">
+					<label class="fl lock_label">手机号码：</label>
+					<el-input type="text" placeholder="请输入手机号" class="reg_text"></el-input>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">密码：</label>
+					<el-input type="text" placeholder="请输入密码" class="reg_text"></el-input>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">确认密码：</label>
+					<el-input type="text" placeholder="请再次输入密码" class="reg_text"></el-input>
+				</div>
+
+				<div class="field" style="margin: 10px 0 0 0px;">
+					<label class="fl lock_label fl">手机验证：</label>
+					<el-input type="text" placeholder="请输入验证码" class="reg_text code_text fl"></el-input>
+					<a href="javascript:void(0);" class="click_getCode fl">点击获取</a>
+				</div>
+			</div>
+		</div>
+		<div class="vip_imessage clearfix">
+			<div class="pages_register_title">会员信息</div>
+			<div class="reg_lock_pages fl">
+				<img src="../images/img6.png" alt="">
+			</div>
+			<div class="reg_lock_input fl">
+				<div class="field">
+					<label class="fl lock_label">昵称：</label>
+					<input type="text" placeholder="请输入名称" class="reg_text">
+				</div>
+				<div class="field">
+					<label class="fl lock_label">性别：</label>
+					<div class="el-radio-group">
+				      <el-radio v-model="sex" :label="0">女</el-radio>
+				      <el-radio v-model="sex" :label="1">男</el-radio>
+				    </div>
+				</div>
+				<div class="field">
+					<label class="fl lock_label">生辰：</label>
+					<el-cascader :options="options" v-model="wordAddress" class="reg_text"></el-cascader>
+				</div>
+				<div class="field">
+					<label class="fl lock_label">身高：</label>
+					<el-input placeholder="请输入身高" class="reg_text"></el-input>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">行业：</label>
+					<el-select placeholder="请选择" class="reg_text">
+				      	<el-option label="区域一" value="2"></el-option>
+				    </el-select>
+				</div>
+					
+				<div class="field">
+					<label class="fl lock_label">工作地区：</label>
+					<el-cascader :options="options" v-model="wordAddress" class="reg_text"></el-cascader>
+		              <!-- <el-cascader :value="12"></el-cascader> 请选择 省 请选择 市 请选择 区-->
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">学历：</label>
+					<el-select placeholder="请选择" class="reg_text">
+				      <el-option label="区域一" value="1"></el-option>
+				    </el-select>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">学历：</label>
+					<el-select placeholder="请选择" class="reg_text" v-model="EducationValue">
+				      <el-option :label="item.value" v-for="item in Education" :value="item.value"></el-option>
+				    </el-select>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">月收入：</label>
+					<el-select placeholder="请选择" class="reg_text" v-model="incomeValue">
+				      	<el-option :label="item.money" 
+				      		:key="item.id"
+							v-for="item in income"
+				      		:value="item.money"></el-option>
+				    </el-select>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">婚姻状况：</label>
+					<div class="el-radio-group">
+				    	<el-radio v-model="marriage" label="0">否</el-radio>
+						<el-radio v-model="marriage" label="1">是</el-radio>
+						<el-radio v-model="marriage" label="2">离异</el-radio>
+					</div>
+				</div>
+
+				<div class="field">
+					<label class="fl lock_label">房车情况：</label>
+					<el-select placeholder="请选择" class="reg_text">
+				      <el-option label="区域一" value="2"></el-option>
+				   </el-select>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="R_submit clearfix">
+		    <el-checkbox label="已阅读" class="fl" v-model="isReaderChecked"></el-checkbox>
+		    <a href="javascript:void(0);" class="fl">《会员注册协议》</a>
+			<el-button class="submit clearfix">免费注册</el-button>
+		</div>
+
+	</form>
+</div>
+<!-- register end -->
+
+<!-- 底部 -->
+<div class="index_page_footer clearfix">
+	<div class="page_footer_body">
+		<div class="page_footer_imessage">
+			<div class="wechat fl">
+				<img src="../images/wechatcode.png" alt="" class="block">
+				<span>关注公众号</span>
+			</div>
+			<div class="imsg_content fl">
+				<ul>
+					<li class="clearfix">
+						<i class="iconfont fl icon-dianhua"></i>
+						<span class="fl">0871-65198586</span>
+					</li>
+
+					<li class="clearfix">
+						<i class="iconfont fl icon-youjian"></i>
+						<span class="fl">kmlaohuaishu@qq.com</span>
+					</li>
+
+					<li class="clearfix">
+						<i class="iconfont fl icon-weibiaoti-"></i>
+						<span class="fl">龙泉路408号云南财经职业学院兴隆院26栋1单元501号</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="page_footer_copy clearfix">
+		<div style="width: 630px;text-align: left;margin: 0px auto;">
+			昆明老槐树婚介服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有&copy;2017 - 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;滇ICP备17005284号
+		</div>
+	</div>
+</div>
+<!-- 底部 -->
+</body>
+</html>
+
+<script>
+	new Vue({
+		  el: '#app',
+		  data() {
+		    	return {
+		    		options:[{
+		    			"value": 'zhinan',
+		    			"label": '指南',
+		    			"children": [{
+		    				"value": 'shejiyuanze',
+            				"label": '设计原则',
+            				"children": [{
+            					"value": 'yizhi',
+              					"label": '一致'
+            				}]
+		    			}]
+		    		}],
+		    		wordAddress: [],
+		    		marriage: '0',
+		    		sex: '0',
+		    		incomeValue: '',
+		    		isReaderChecked: true,
+		    		EducationValue: '',
+		    		Education: [
+		    			{
+		    				"key": 0,
+		    				"value": '小学',
+		    			},{
+		    				"key": 1,
+		    				"value": '初中',
+		    			},{
+		    				"key": 2,
+		    				"value": '高中',
+		    			},{
+		    				"key": 3,
+		    				"value": '大学',
+		    			},
+		    		],
+		    		income: [
+		    			{
+		    				"id": 0,
+		    				"money": '2000以下'
+		    			},
+		    			{
+		    				"id": 1,
+		    				"money": "2000-4000"
+		    			},
+		    			{
+		    				"id": 2,
+		    				"money": "4000-6000"
+		    			},
+		    			{
+		    				"id": 3,
+		    				"money": "6000-8000"
+		    			},
+		    			{
+		    				"id": 4,
+		    				"money": "一万以上"
+		    			}
+		    		]
+		    	}
+		  }
+	})
+</script>

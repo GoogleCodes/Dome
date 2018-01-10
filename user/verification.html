@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>昆明老槐树婚介服务有限公司</title>
+	<meta name=keywords content="">
+  	<meta name=description content="">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+	<!-- 头部 -->
+<div class="main_header">
+	<div class="main_header_top_container">
+		<div class="main_header_top">
+			<div class="main_header_top_left">昆明老槐树婚介服务有限公司</div>
+			<div class="main_header_top_right">
+				<div class="main_header_top_right_content1">寻缘管家：0871-65198586</div>
+				<div class="main_header_top_right_content2">安全中心</div>
+				<a href="">
+					<div class="main_header_top_right_button">登录</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_header_nav_container">
+		<div class="main_header_nav">
+			<a href="index.html">
+				<img class="main_header_nav_logo" src="../images/logo.png">
+			</a>
+			<div class="main_header_nav_list" id="headrNavList">
+				<div class="main_header_nav_item active">
+					<a href="javascript:void(0);">首页</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">秀红线</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">牵红线</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">格调约会</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">喜结良缘</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">最新活动</a>
+				</div>
+				<div class="main_header_nav_item">
+					<a href="javascript:void(0);">联系我们</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- 头部 -->
+<!-- login_content start -->
+<div class="verifi_content">
+	<div class="verifi_content_pages">
+		<ul class="pages_ul_tab">
+			<li class="fl active">
+				<span>手机验证</span>
+			</li>
+
+			<li class="fl">
+				<span>重置密码</span>
+			</li>
+		</ul>
+		<div class="pages clearfix">
+			<div class="pages_title">手机验证</div>
+			<form class="V_form">
+				<div id="pages_phone">
+					<div class="field">
+						<select class="fl field_select">
+							<option>+0757</option>
+							<option>+86</option>
+						</select>
+						<input type="text" class="fl login_text" placeholder="手机号" id="telphone">
+					</div>
+					<div class="field">
+						<input type="text" class="code_text fl" placeholder="请输入验证码" id="codeInput">
+						<a href="javascript:void(0);" class="getCode fl" id="getCode">验证码</a>
+					</div>
+				</div>
+				<div id="pages_password" style="display:  none;">
+					<div class="field">
+						<input type="text" class="pages_pwd_text" placeholder="输入新密码" id="input_news_pwd">
+					</div>
+					<div class="field">
+						<input type="text" class="pages_pwd_text" placeholder="再次输入密码" id="input_again">
+					</div>
+				</div>
+				<div class="submit">
+					<input type="button" class="J_submit" value="确认" id="" />
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+<!-- login_content end -->
+
+<!-- 底部 -->
+<div class="index_page_footer">
+	<div class="page_footer_body">
+		<div class="page_footer_imessage">
+			<div class="wechat fl">
+				<img src="../images/wechatcode.png" alt="" class="block">
+				<span>关注公众号</span>
+			</div>
+			<div class="imsg_content fl">
+				<ul>
+					<li class="clearfix">
+						<i class="iconfont fl icon-dianhua"></i>
+						<span class="fl">0871-65198586</span>
+					</li>
+
+					<li class="clearfix">
+						<i class="iconfont fl icon-youjian"></i>
+						<span class="fl">kmlaohuaishu@qq.com</span>
+					</li>
+
+					<li class="clearfix">
+						<i class="iconfont fl icon-weibiaoti-"></i>
+						<span class="fl">龙泉路408号云南财经职业学院兴隆院26栋1单元501号</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="page_footer_copy clearfix">
+		<div style="width: 630px;text-align: left;margin: 0px auto;">
+			昆明老槐树婚介服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有&copy;2017 - 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;滇ICP备17005284号
+		</div>
+	</div>
+</div>
+<!-- 底部 -->
+
+</body>
+</html>
+
+<body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	(function() {
+		$(function() {
+			$('#getCode').click(() => {
+				switch(true) {
+					case $('#telphone').val() == '':
+						alert("请输入手机号码!");
+						return false;
+					case $('#codeInput').val() == '':
+						alert("请输入验证码!");
+						return false;
+					default:
+						$('#pages_phone').css('display', 'none');
+						$('#pages_password').css('display', 'block');
+				}
+
+			});
+		});
+	})();
+</script>
