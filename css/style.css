@@ -69,6 +69,47 @@ a, a:hover, a:visited, a:link {
   overflow: hidden;
   white-space: normal; }
 
+/*改变谷歌滚动条的样式*/
+::-moz-selection {
+  background: pink; }
+::selection {
+  background: pink; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 50px;
+  background: #fff; }
+
+::-webkit-scrollbar-button {
+  background-color: #e5e5e5; }
+
+::-webkit-scrollbar-track {
+  background: #999; }
+
+::-webkit-scrollbar-track-piece {
+  background: #ccc; }
+
+::-webkit-scrollbar-thumb {
+  background: #666; }
+
+::-webkit-scrollbar-corner {
+  background: #82AFFF; }
+
+::-webkit-scrollbar-resizer {
+  background: #FF0BEE; }
+
+scrollbar {
+  -moz-appearance: none !important;
+  background: lime !important; }
+
+scrollbarbutton {
+  -moz-appearance: none !important;
+  background-color: blue !important; }
+
+scrollbarbutton:hover {
+  -moz-appearance: none !important;
+  background-color: red !important; }
+
 .column {
   position: fixed;
   right: 0px;
