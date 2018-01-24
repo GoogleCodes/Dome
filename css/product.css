@@ -1,0 +1,39 @@
+/*内容*/
+.content{
+	width:1200px;
+	height: 755px;
+	text-align: center;
+	margin:0px auto 110px;
+}
+
+.title{
+	height: 30px;
+	margin: 0px auto 10px;
+	line-height: 30px;
+}
+
+.arcticle{
+	width: 850px;
+	height:500px;
+	margin:30px auto;
+	text-align: left;
+	/*border:1px solid red;*/
+}
+
+.arcticle ul{
+	width: 1200px;
+	height:390px;
+	line-height: 390px;
+	margin:10px auto;
+	/*border:1px solid red;*/
+}
+.arcticle ul li{
+	width: 250px;
+	float: left;
+	height:350px;
+	padding:15px 12px;
+	line-height: 350px;
+	margin:5px 12px;
+	border:1px solid #C69C6D;
+
+}

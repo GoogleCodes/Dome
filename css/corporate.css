@@ -1,0 +1,68 @@
+/*内容*/
+.content .title {
+	margin: 74px auto;
+	text-align: center;
+	font-size: 24px;
+}
+
+.news .arcticle ul li {
+	font-size: 18px;
+}
+
+.title .content {
+	width: 1200px;
+	height: 755px;
+	font-size: 24px;
+	text-align: center;
+	/*border:1px solid red;*/
+}
+/*正文*/
+.news{
+	height: 665px;
+	color:#666666;
+	/*background-color: #F2F2F2;*/
+}
+.arcticle{
+	width: 100%;
+	height:665px;
+	margin:0px auto;
+	text-align: left;
+	/*border:1px solid red;*/
+}
+.arcticle ul{
+	height:110px;
+	line-height: 110px;
+	margin:0px auto;
+	border-bottom:1px dashed gray;
+}
+.arcticle ul li:first-child{
+	float: left;
+
+}
+.arcticle ul li:last-child{
+	float: right;
+
+}
+/*页面*/
+.page{
+	width: 1200px;
+	height:90px;
+	margin:70px auto;
+	/*border:1px solid red;*/
+}
+.pageul{
+	width: 400px;
+	height:90px;
+	margin:0px auto;
+}
+.pageul li{
+	width: 25px;
+	height:30px;
+	float: left;
+	margin:25px;
+	font-weight: bolder;
+	color:#4D4D4D;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #494848; 
+}

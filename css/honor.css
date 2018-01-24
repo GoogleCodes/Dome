@@ -1,0 +1,86 @@
+/*导读*/
+.daodu{
+	height:90px;
+	line-height: 90px;
+	color:#4D4D4D;
+	/*border:1px solid red;*/
+}
+.linediv1,.linediv2{
+   width:400px;
+   height:1px;
+   line-height: 30px;
+   float:left;
+   margin: 30px auto;
+   border-bottom:1px solid #CCCCCC; 
+}
+.linediv2{
+   width:420px;
+   float:right;
+}
+
+/*内容*/
+.content{
+	width:1200px;
+	height: 100%;
+	text-align: center;
+	margin:0px auto;
+	/*border:1px solid red;*/
+}
+
+/*正文*/
+.news{
+	height: 665px;
+	font-size: 24px;
+	color:#666666;
+	/*background-color: #F2F2F2;*/
+}
+.arcticle{
+	width: 1200px;
+	height:800px;
+	margin:0px auto;
+	/*border:1px solid red;*/
+}
+.arcticle ul{
+	width: 1200px;
+	height:390px;
+	line-height: 390px;
+	margin:10px auto;
+	/*border:1px solid red;*/
+}
+.arcticle ul li {
+	width: 261px;
+    float: left;
+    height: 365px;
+    padding: 15px 12px;
+    line-height: 350px;
+    margin: 5px 17px 0px 0px;
+    border: 1px solid #C69C6D;
+}
+
+.arcticle ul li:nth-child(4n) {
+	margin: 5px 0px 0px 0px;
+}
+
+/*页面*/
+.page{
+	width: 1200px;
+	height:90px;
+	margin:120px auto 50px;
+	/*border:1px solid red;*/
+}
+.pageul{
+	width: 400px;
+	height:90px;
+	margin:0px auto;
+}
+.pageul li{
+	width: 31px;
+	height: 31px;
+	float: left;
+	margin: 0px 40px 0 0;
+	font-weight: bolder;
+	color:#4D4D4D;
+	text-align: center;
+	line-height: 31px;
+	border:1px solid #494848; 
+}

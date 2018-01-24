@@ -1,0 +1,40 @@
+/*内容*/
+.content{
+	width:1200px;
+	height: 100%;
+	text-align: center;
+	margin:0px auto 110px;
+}
+.p1{
+	font-weight: bolder;
+	font-size: 15px;
+	color:#333333;
+	margin: 0px;
+	line-height: 70px;
+}
+/*正文*/
+.news{
+	height: 683px;
+	padding-bottom: 25px;
+	background-color: #F2F2F2;
+}
+.news p{
+	font-size: 20px;
+	color:#666666;
+}
+
+.titlediv{
+	height: 137px;
+}
+.arcticle{
+	width: 850px;
+	margin: 40px auto;
+	text-align: left;
+	/*border:1px solid red;*/
+}
+
+.arcticle p {
+	font-size: 18px;
+	color: #4d4d4d;
+	line-height: 35px;
+}

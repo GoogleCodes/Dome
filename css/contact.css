@@ -1,0 +1,175 @@
+
+/*内容*/
+.content{
+	width:1200px;
+	height: 480px;
+	text-align: center;
+	margin:0px auto;
+}
+.title{
+	height: 30px;
+	line-height: 30px;
+}
+/*正文*/
+.container{
+	width: 880px;
+	height: 100%;
+	/*border:1px solid red;*/
+}
+.leftdiv{
+	width: 350px;
+	height: 100%;
+	text-align: left;
+	float: left;
+	/*border:1px solid red;*/
+	border-right:1px dashed #CCCCCC;
+}
+.rightdiv{
+	width: 350px;
+	height: 300px;
+	float: left;
+	text-align: left;
+	margin:0px 50px;
+	/*border:1px solid red;*/
+}
+
+.leftdiv p  span:nth-child(2n+1){
+	font-weight: bolder;
+}
+.leftdiv p  span:nth-child(2n){
+	color:#808080;
+}
+.rightdiv p  span:nth-child(2n+1){
+	font-weight: bolder;
+}
+.rightdiv p  span:nth-child(2n){
+	color:#808080;
+}
+
+.bottomdiv{
+	width: 840px;
+	height: 100%;
+	overflow: hidden;
+	margin: 38px auto;
+	padding: 38px 0px;
+	border-top: 1px dashed #b3b3b3;
+
+}
+.bottomul{
+	width: 780px;
+	height:110px;
+	text-align: left;
+	margin:0px auto;
+	/*border:1px solid #C69C6D;*/
+}
+
+.bottomul div{
+	float: left;
+}
+.bottomul li p span:nth-child(2n+1){
+	vertical-align: text-top;
+	font-weight: bolder;
+}
+.bottomul li p span:nth-child(2n){
+	color:#808080;
+}
+
+.textdiv {
+	width: 840px;
+	height: 100%;
+	text-align: center;
+	margin:0px auto 30px;
+	/*border:1px solid red;*/
+	color:#57BDE5;
+    background-color: #F2F2F2;
+}
+
+
+.titdiv{
+	margin: 10px auto 10px;
+	height: 75px;
+	line-height: 75px;
+	font-size: 22px;
+}
+
+.titul{
+	width: 840px;
+	font-size: 15px;
+	margin: 0px auto;
+}
+.textli, .sendli{ 
+    float: left;
+    width: 380px;
+    height: 100%;
+    text-align: left;
+    margin: 0px 20px;
+}
+
+.sendli {
+	 width: 800px;
+}
+
+.sendli .textarea {
+	width: 100%;
+	height: 25px;
+	border-radius: 5px;
+	border: none;
+	border-bottom: 1px solid #57bde5;
+}
+
+.textdiv .save_btn {
+	width: 198px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	font-size: 18px;
+	color: #fff;
+	line-height: 50px;
+	margin: 30px 0;
+	background: #57bde5;
+}
+
+.input1{
+   border:0;
+   width: 95%;
+   height: 25px;
+   padding-left: 10px;
+   background: #f2f2f2;
+   outline: none;
+   border-bottom:1px solid #57BDE5;
+}
+.button{
+	 margin: 20px auto;
+	 text-align: center;
+	 height: 50px; 
+	 line-height: 200px;
+}
+
+
+/* bottomdiv start */
+.bottomdiv .imsg_content ul li {
+	width: 100%;
+	height: 100%;
+	line-height: 35px;
+	overflow: hidden;
+}
+
+.bottomdiv .imsg_content ul li .iconfont {
+	font-size: 23px;
+	color: #333;
+	width: 30px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.bottomdiv .imsg_content ul li span {
+	width: 95%;
+	color: #808080;
+	font-size: 20px;
+}
+
+.bottomdiv .imsg_content ul li span .fr_span_title {
+	color: #1a1a1a;
+}
+
+/* bottomdiv end */

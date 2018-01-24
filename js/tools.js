@@ -2,6 +2,10 @@ let ToolsFunction = (function() {
 
 	class Tools {
         
+        _$(id) {
+            return document.getElementById(id);
+        }
+
 		swiperBanner() {
 			var mySwiper = new Swiper ('.swiper-container', {
 				loop: true,
@@ -33,33 +37,37 @@ let ToolsFunction = (function() {
             });
         }
 
-        siblingsDom(id, class1, class2) {
-        	var cardDom = document.getElementById(id);
+        siblingsDom(id, class1, class2, flag) {
+            var cardDom = this._$(id);
             var liDomes = cardDom.children;
-           	console.log(liDomes);
             var len = liDomes.length;
             for(var i = 0; i < len; i++) {
-            	var that = this;
+                var that = this;
                 //给对象缓存自有属性
                 liDomes[i].index = i;
-
                 liDomes[i].onmouseover = function() {
-                	this.className = class1;
-                    //同辈元素互斥
-                    that.siblings(this,function(){
-                        this.className = class2;
-                    });
-                }
-
-                liDomes[i].onclick = function(){
                     this.className = class1;
                     //同辈元素互斥
                     that.siblings(this,function(){
                         this.className = class2;
                     });
+                }
+                liDomes[i].onmouseover = function(){
+                    this.className = class1;
+                    //同辈元素互斥
+                    that.siblings(this, function(){
+                        this.className = class2;
+                    });
                     //把对应的选项卡的内容显示出来
                     var tabDom = document.getElementById("IDate_list").children[this.index];
+                    if (flag == true) {
+                        tabDom.style.display = "block";
+                        that.siblings(tabDom, function(){
+                            this.style.display = "none";
+                        });
+                    }
                 };
+
             }
         }
 
@@ -71,46 +79,49 @@ let ToolsFunction = (function() {
         		success: function(res) {
         			console.log(res);
         		},
-        		fail(err) {
+        		fail: function(err) {
         			console.log(err);
         		}
         	});
         }
 
-        footerElemet() {
-            let html = "<div class='index_page_footer'> "+
-                        "<div class='page_footer_body'>"+
-                            "<div class='page_footer_imessage'>"+
-                                "<div class='wechat fl'>"+
-                                    "<img src='./images/wechatcode.png' class='block'>"+
-                                    "<span>关注公众号</span>"+
-                                "</div>"+
-                                "<div class='imsg_content fl'>"+
-                                    "<ul>"+
-                                        "<li class='clearfix'>"+
-                                            "<i class='iconfont fl icon-dianhua'></i>"+
-                                            "<span class='fl'>0871-65198586</span>"+
-                                        "</li>"+
-                                        "<li class='clearfix'>"+
-                                            "<i class='iconfont fl icon-youjian'></i>"+
-                                            "<span class='fl'>kmlaohuaishu@qq.com</span>"+
-                                        "</li>"+
-
-                                        "<li class='clearfix'>"+
-                                            "<i class='iconfont fl icon-weibiaoti-'></i>"+
-                                            "<span class='fl'>龙泉路408号云南财经职业学院兴隆院26栋1单元501号</span>"+
-                                        "</li>"+
-                                    "</ul>"+
-                                "</div>"+
-                            "</div>"+
-                        "</div>"+
-                        "<div class='page_footer_copy clearfix'>"+
-                            "<div style='width: 630px;text-align: left;margin: 0px auto;'>"+
-                                "昆明老槐树婚介服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有&copy;2017 - 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;滇ICP备17005284号"+
-                            "</div>"+
-                        "</div>"+
+        mune() {
+            let html = "<div class='column' style='display: none;'>"+
+                        "<ul>" +
+                        "    <li>" +
+                        "        <i class='iconfont icon-185078emailmailstreamline'></i>" +
+                        "        <span>Contact Supplier</span>" +
+                        "    </li>" +
+                        "    <li>" +
+                        "        <i class='iconfont icon-whatsapp'></i>" +
+                        "        <span class='whatsapp'>whatsapp</span>" +
+                        "    </li>" +
+                        "    <li>" +
+                        "        <i class='iconfont icon-wechat'></i>" +
+                        "        <span class='wechat'>wechat</span>" +
+                        "    </li>" +
+                        "    <li class='ruiTouTop'>" +
+                        "        <span class='top'>TOP</span>" +
+                        "        <i class='iconfont icon-top'></i>" +
+                        "    </li>" +
+                        "</ul>" +
                     "</div>";
-            $('#footer').append(html);
+            $('body').append(html);
+            // 按钮淡入淡出
+            $(window).scroll(function(){
+                if($(window).scrollTop() >= 450){
+                    $(".column").fadeIn(200);
+                } else {
+                    $(".column").stop(true,true).fadeOut(200);
+                }
+            });
+            
+            // 回到顶部
+            $(".ruiTouTop").click(function(){
+                $("html,body").animate({
+                    scrollTop:0
+                },200);
+            });
         }
 
 	}
@@ -118,7 +129,5 @@ let ToolsFunction = (function() {
     return {
         Tools
     }
-
-	// tools.getNewsMesasge();
 
 })();
