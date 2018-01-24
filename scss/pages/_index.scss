@@ -164,9 +164,14 @@
 .page_footer_imessage .imsg_content ul li {
     color: #333;
     height: 30px;
-    line-height: 30px;
     font-weight: bold;
+    font-size: 12px;
     font-family: 'Adobe 黑体 Std R';
+
+    span {
+        position: relative;
+        top: 5px;
+    }
 }
 
 .imsg_content ul li .iconfont {
@@ -345,7 +350,7 @@
         width: 968px;
         height: 100%;
         overflow: hidden;
-        margin: 55px auto 0;
+        margin: 55px auto;
 
         li {
             width: 305px;
@@ -361,10 +366,13 @@
         }
 
         li:nth-child(3n) {
-            margin: 0px;
+            margin: 0 0 25px 0;
         }
+
+
     }
 }
+
 /* our_company end */
 
 /* product_pages start */

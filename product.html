@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/iconfont.css">
+
+    <!--[if gte IE 7]>
+    <script type="text/javascript">
+        window.location.href = "updatebrowser.html";
+    </script>
+    <![endif]-->
+
+    <!--[if gte IE 8]>
+    <script type="text/javascript">
+        window.location.href = "updatebrowser.html";
+    </script>
+    <![endif]-->
+
 </head>
 <body>
 <!-- 头部 -->
@@ -41,13 +54,13 @@
                     <a href="company.html">About us</a>
                     <ul>
                         <li>
-                            <a href="company.html">Our Company</a>
+                            <a href="company.html" class="d_nav">Our Company</a>
                         </li>
                         <li>
-                            <a href="company.html">Aptitude honor</a>
+                            <a href="company.html" class="d_nav">Aptitude honor</a>
                         </li>
                         <li>
-                            <a href="company.html">Corporate Style</a>
+                            <a href="company.html" class="d_nav">Corporate Style</a>
                         </li>
                     </ul>
                 </div>
@@ -55,35 +68,43 @@
                     <a href="product.html">Product</a>
                     <ul>
                         <li>
-                            <a href="product.html">DC MOTOR</a>
+                            <a href="product.html" class="d_nav">DC MOTOR</a>
                         </li>
                         <li>
-                            <a href="product.html">LINEAR ACTUATOR</a>
+                            <a href="product.html" class="d_nav">LINEAR ACTUATOR</a>
                         </li>
                         <li>
-                            <a href="product.html">LIFTING COLUMN</a>
+                            <a href="product.html" class="d_nav">LIFTING COLUMN</a>
                         </li>
                         <li>
-                            <a href="product.html">CONTROL BOX</a>
+                            <a href="product.html" class="d_nav">CONTROL BOX</a>
                         </li>
                         <li>
-                            <a href="product.html">HANDSET</a>
+                            <a href="product.html" class="d_nav">HANDSET</a>
                         </li>
                         <li>
-                            <a href="product.html">POWER ADAPTER</a>
+                            <a href="product.html" class="d_nav">POWER ADAPTER</a>
                         </li>
                         <li>
-                            <a href="product.html">FOOT SWITCH</a>
+                            <a href="product.html" class="d_nav">FOOT SWITCH</a>
                         </li>
                     </ul>
                 </div>
                 <div class="main_header_nav_item fl">
                     <a href="application.html">Application</a>
                     <ul>
-                        <li>Medical Care series</li>
-                        <li>Household series</li>
-                        <li>office series</li>
-                        <li>industry series</li>
+                        <li>
+                            <a href="application.html">Medical Care series</a>
+                        </li>
+                        <li>
+                            <a href="application.html">Household series</a>
+                        </li>
+                        <li>
+                            <a href="application.html">office series</a>
+                        </li>
+                        <li>
+                            <a href="application.html">industry series</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="main_header_nav_item fl">
@@ -255,8 +276,10 @@
 </body>
 </html>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/tools.js"></script>
 <script type="text/javascript">
-    let tools = new ToolsFunction.Tools();
-    tools.siblingsDom("IDate_list", "active", "");
+    tools.j.mune();
+    tools.j.swiperBanner();
+    tools.j.siblingsDom("IDate_list", "active", "");
 </script>

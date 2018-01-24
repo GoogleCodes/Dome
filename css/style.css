@@ -271,7 +271,7 @@ scrollbarbutton:hover {
     top: 40px;
     left: 0px;
     width: 220px;
-    height: 100%;
+    height: auto;
     z-index: 1000;
     display: none; }
     .main_header .main_header_nav_item ul li {
@@ -280,15 +280,24 @@ scrollbarbutton:hover {
       width: 100%;
       color: #fff;
       cursor: pointer;
-      background: #b3b3b3;
-      border-bottom: 1px solid #fff; }
+      background: #b3b3b3; }
       .main_header .main_header_nav_item ul li a {
         padding: 0px;
-        display: block; }
-    .main_header .main_header_nav_item ul li:hover {
-      background: #999; }
+        display: block;
+        border: none;
+        position: relative;
+        padding: 0px 29px;
+        height: 49px; }
+        .main_header .main_header_nav_item ul li a .list {
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          bottom: -2px;
+          background: #ccc; }
+      .main_header .main_header_nav_item ul li a:hover {
+        background: #999; }
     .main_header .main_header_nav_item ul li:last-child {
-      border: none; }
+      padding: 0px 0 10px 0; }
 
 .main_header .main_header_nav_item:hover ul {
   display: block; }
@@ -504,9 +513,12 @@ scrollbarbutton:hover {
 .page_footer_imessage .imsg_content ul li {
   color: #333;
   height: 30px;
-  line-height: 30px;
   font-weight: bold;
+  font-size: 12px;
   font-family: 'Adobe 黑体 Std R'; }
+  .page_footer_imessage .imsg_content ul li span {
+    position: relative;
+    top: 5px; }
 
 .imsg_content ul li .iconfont {
   font-size: 18px;
@@ -634,7 +646,7 @@ scrollbarbutton:hover {
     width: 968px;
     height: 100%;
     overflow: hidden;
-    margin: 55px auto 0; }
+    margin: 55px auto; }
     .our_company ul li {
       width: 305px;
       height: 230px;
@@ -645,7 +657,7 @@ scrollbarbutton:hover {
         height: 191px;
         margin: 18px 8px; }
     .our_company ul li:nth-child(3n) {
-      margin: 0px; }
+      margin: 0 0 25px 0; }
 
 /* our_company end */
 /* product_pages start */

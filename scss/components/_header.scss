@@ -216,7 +216,7 @@
             top: 40px;
             left: 0px;
             width: 220px;
-            height: 100%;
+            height: auto;
             z-index: 1000;
             display: none;
 
@@ -227,20 +227,33 @@
                 color: #fff;
                 cursor: pointer;
                 background: #b3b3b3;
-                border-bottom: 1px solid #fff;
 
                 a {
                     padding: 0px;
                     display: block;
+                    border: none;
+                    position: relative;
+                    padding: 0px 29px;
+                    height: 49px;
+
+                    .list {
+                        width: 100%;
+                        height: 1px;
+                        position: absolute;
+                        bottom: -2px;
+                        background: #ccc;
+                    }
+                }
+
+                a:hover {
+                    background: #999;
                 }
             }
-            li:hover{
-                background: #999;
+
+            li:last-child{
+                padding: 0px 0 10px 0;
             }
 
-            li:last-child {
-                border: none;
-            }
         }
     }
 
