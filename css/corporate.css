@@ -7,6 +7,15 @@
 
 .news .arcticle ul li {
 	font-size: 18px;
+	height: 110px;
+	width: 100%;
+	line-height: 110px;
+	border-bottom: 1px dashed gray;
+}
+
+.news .arcticle ul li a:hover {
+	text-decoration: underline;
+	color: #67CEC7;
 }
 
 .title .content {
@@ -14,13 +23,11 @@
 	height: 755px;
 	font-size: 24px;
 	text-align: center;
-	/*border:1px solid red;*/
 }
 /*正文*/
 .news{
 	height: 665px;
-	color:#666666;
-	/*background-color: #F2F2F2;*/
+	color:#666;
 }
 .arcticle{
 	width: 100%;
@@ -28,20 +35,6 @@
 	margin:0px auto;
 	text-align: left;
 	/*border:1px solid red;*/
-}
-.arcticle ul{
-	height:110px;
-	line-height: 110px;
-	margin:0px auto;
-	border-bottom:1px dashed gray;
-}
-.arcticle ul li:first-child{
-	float: left;
-
-}
-.arcticle ul li:last-child{
-	float: right;
-
 }
 /*页面*/
 .page{
